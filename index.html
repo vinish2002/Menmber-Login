@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <button class="toggle-theme" id="toggleTheme">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <div class="container">
+        <form action="CallSignUp" method="POST">
+            <!-- Icon container for the sign-in icon -->
+            <div class="icon">
+                <!-- Font Awesome sign-in icon -->
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+            <!-- Main heading for the sign-in form -->
+            <h2>Sign in with email</h2>
+            <!-- Subheading/description text -->
+            <p>Let's go with the flow</p>
+
+            <div class="input-group">
+                <input class="input" required autocomplete="off" type="text" name="email" id="email">
+                <label class="label" for="email">Email</label>
+            </div>
+            <br />
+
+            <div class="input-group">
+                <input class="input" required autocomplete="off" type="password" name="password" id="password">
+                <label class="label" for="password">Password</label>
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+        <form action="register.html">
+            <div class="or">
+                ---------------------- Not Registered yet? ----------------------
+            </div>
+            <div class="social-icons">
+                <!--             <button class="btn" onclick="window.location.href='register.html';"> -->
+                <button class="btn">
+                    Get Started here
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
